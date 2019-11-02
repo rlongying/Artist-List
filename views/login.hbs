@@ -1,0 +1,22 @@
+<div class="loginContainer">
+    <h2 class="title">Member Login</h2>
+    <form action="/login" method="POST">
+        <div class="inputs-area">
+            {{#if error}}
+            <p class="error-msg"><i class="fas fa-exclamation-circle"></i> username or password is not correct!</p>
+            {{/if}}
+            <div class="input-container ">
+                <i class="fa fa-user icon"></i>
+                <input class="input-field" type="text" placeholder="Username" name="username">
+            </div>
+
+
+            <div class="input-container ">
+                <i class="fa fa-lock icon"></i>
+                <input class="input-field" type="password" placeholder="Password" name="password">
+            </div>
+
+        </div>
+        <button class="btn" type="submit">Login</button>
+    </form>
+</div>

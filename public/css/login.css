@@ -1,0 +1,79 @@
+.loginContainer {
+  margin: 100px auto;
+  width: 600px;
+  height: 500px;
+  background-color: rgb(246, 245, 240);
+  padding: 60px;
+  border-radius: 5px;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.title {
+  color: rgb(156, 156, 156);
+}
+
+.error-msg {
+  font-style: italic;
+  color: red;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  margin-top: 50px;
+  padding: 50px 0;
+  border-top: 1px solid white;
+}
+
+.inputs-area {
+  margin-bottom: 50px;
+  border: 2px solid rgb(213, 213, 213, 0.7);
+  padding: 10px 20px;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.icon {
+  padding: 10px 0;
+  color: rgb(170, 170, 170);
+  min-width: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: white; */
+}
+
+.input-container:first-child {
+  border-bottom: 1px solid rgb(237, 237, 237);
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-style: italic;
+}
+
+.btn {
+  background-color: orange;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}

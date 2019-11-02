@@ -1,0 +1,34 @@
+{{>header}}
+<main class="column artist_app">
+  <form action="/artist/search" method="GET" class="search">
+    <h2>Artist Directory</h2>
+    <div class="search_area">
+      <input type="text" class="search_box" name="key" />
+      <button type="submit" class="search_artist_btn">Search</button>
+      <button class="add_artist_btn">Add Artist</button>
+    </div>
+  </form>
+
+  <form action="/artist/add" method="POST" class="column add_form hide">
+    <input type="text" name="name" maxlength="40" placeholder="Artist Name" />
+    <input type="text" name="about" maxlength="40" placeholder="About Artist" />
+    <input type="text" name="image" placeholder="Image Url" />
+    <button class="add_btn" id="add_btn" type="submit">Add</button>
+  </form>
+
+  <div class="artists">
+    <ul class="artist_list">
+      {{#each artists}}
+      <li class="artist">
+        <img src={{this.image}} alt="" />
+
+        <div class="artist_info">
+          <h3 class="artist_name">{{this.name}}</h3>
+          <p class="artist_desc"> {{this.about}} </p>
+        </div>
+        <button data-id={{this.id}} class="delete_artist_btn">Delete</button>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</main>
