@@ -1,4 +1,4 @@
-const user = "A00935740";
+const user = "user";
 const password = "password";
 
 const getUser = () => {
