@@ -9,4 +9,4 @@ user: "user"
 password: "password"
 ```
 
-[link to hosted web](https://artist-lab06-comp4711.herokuapp.com)
+[link to hosted heroku](https://artist-lab06-comp4711.herokuapp.com)
