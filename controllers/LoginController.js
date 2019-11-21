@@ -5,7 +5,7 @@ const login = (req, res, next) => {
   let pwd = userModel.getPwd();
 
   let { username, password } = req.body;
-  username = username.trim().toUpperCase();
+  username = username.trim();
 
   console.log(`form: ${username} - ${password}`);
   console.log(`model: ${user} - ${pwd}`);
